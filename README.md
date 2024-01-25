@@ -4,6 +4,12 @@ Custom transmitter of clientside Lua scripts for Garry's Mod with built-in integ
 ## Why it's obfuscated?
 **luapatch isn't intended to be an open source project. I've done this for my own projects that require this as a dependency. No backdoors or exploits here. However, if you don't use it with my scripts, you don't have to use it at all. Therefore, I'm not responsible for any potential risk.**
 
+## Problem
+You cannot transfer scripts larger than 64 KB to the client. When it comes to larger scripts with obfuscation, there's a problem.
+
+## Solution
+Split the script into different parts, which will later be assembled on the client and compiled into a complete function.
+
 ## Dependencies
 * [gmsv_fileio](https://github.com/alexgrist/gmsv_fileio) (to interact with filesystem on your server)
 
