@@ -28,13 +28,14 @@ end
 
 ## Methods
 ### `server` luapatch:AddCSLuaFile(<string: filepath>)
-Sends splitted script to the client. **Use only with client-side scripts. Don't use this method when it comes to shared files!**
+Sends splitted script to the client.\
+**Use only with client-side scripts. Don't use this method when it comes to shared files!**
 ```lua
 luapatch:AddCSLuaFile("cl_test.lua");
 ```
-
 ### `client` luapatch:Process(<string: schema>)
-Collects and compiles the script. **Used internally in auto-generated files. You don't have to use it!**
+Collects and compiles the script.\
+**Used internally in auto-generated files. You don't have to use it!**
 ```lua
 -- @filename: cl_test.lua
 -- @describe: This file has been auto-generated and doesn't contain any sensitive data
