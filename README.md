@@ -2,7 +2,7 @@
 Custom transmitter of clientside Lua scripts for Garry's Mod with built-in integrity check
 
 ## Why it's obfuscated?
-**luapatch isn't intended to be an open source project. I've done this for my own projects that require this as a dependency. No backdoors or exploits here. However, if you don't use it with my scripts, you don't have to use it at all.**
+**luapatch isn't intended to be an open source project. I've done this for my own projects that require this as a dependency. No backdoors or exploits here. However, if you don't use it with my scripts, you don't have to use it at all. Therefore, I'm not responsible for any potential risk.**
 
 ## Dependencies
 * [gmsv_fileio](https://github.com/alexgrist/gmsv_fileio) (to interact with filesystem on your server)
