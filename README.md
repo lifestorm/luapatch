@@ -23,12 +23,10 @@ include("extensions/net.lua");
 
 if (SERVER) then
   AddCSLuaFile("modules/luapatch/cl_luapatch.lua");
-  AddCSLuaFile("modules/luapatch/encryption/icestone.lua");
+  AddCSLuaFile("modules/luapatch/encryption/sh_encryption.lua");
   require("luapatch/sv_luapatch");
 else
-  if (file.Exists("includes/modules/luapatch/cl_luapatch.lua", "LUA")) then
-    require("luapatch/cl_luapatch");
-  end
+  require("luapatch/cl_luapatch");
 end
 ```
 
